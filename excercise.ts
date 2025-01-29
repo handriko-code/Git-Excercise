@@ -1,28 +1,54 @@
 // Problem: Write a code to display the multiplication table of a given intege
 // Instance:  Number → 9
+let limit: number = 10;
+const input: number = 9;
+let result1: number = 0;
+ for (let i = 0; i <= limit; i++) {
+    result1 = input * i;
+    console.log(result1);
+ }
+
+
+// Problem:Write a code to check whether a string is a palindrome or not.
+// Instance: : ‘madam’ → palindrome
+const text1: string = "madam";
+const splText= text1.split("");
+const reverseText = splText.reverse();
+const mergetext = reverseText.join();
+let result2 = text1 === mergetext? "palindrome" : "not palindrome";
+console.log(`${text1} word is ${result2}`); 
 
 
 
+// Problem: Write a code to convert centimeter to kilomete
+// Instance: 100000 → “1 km”
+let input1: number = 1;
+let conversion: number = input1 * 10;
+console.log(`converting ${input1} cm = ${conversion} km`);
 
+
+// Problem: Write a code to format number as currency (IDR)
+// Instance:  1000 → “Rp. 1.000,00”
+let num: number = 1000000;
+let text2 = num.toLocaleString("id-ID",{style:"currency", currency:"IDR"});
+console.log(`formating number ${num} changed into ${text2}`)
 
 
 // Problem: Write a code to remove the first occurrence of a given “search string” from a string
 // instance: string = “Hello world”, search string = “ell” → “Ho world”
 let word: string = "Hello World";
 let x:number = 1;
-let result1 = " ";
+let result3 = " ";
 for (let i = 0; i < word.length; i++) {
     if (i === x ) {
-        result1 = word.slice(i,4);
-        console.log(word.replace(`${result1}`, "")); 
+        result3 = word.slice(i,4);
+        console.log(word.replace(`${result3}`, "")); 
     }
 }
 
 
-
 // Problem: Write a code to capitalize the first letter of each word in a string
 // Instance: "hello world" changed into "Hello World"
-
 let myword: string = "apa kabar";
 let _split = myword.split(" ");
 for (let i = 0; i <_split.length; i++) {
@@ -51,8 +77,8 @@ console.log(letter);
 
 let num1: number = 42;
 let num2: number = 27;
-let result = (num1 > num2? `${num1} is largest number` : `${num2} is largest number`)
-console.log(result);
+let result4 = (num1 > num2? `${num1} is largest number` : `${num2} is largest number`)
+console.log(result4);
 
 // Problem: Write a conditional statement to sort three numbers
 // Instance:  num1 = 42, num2 = 27, num3 = 18 sorted into 18, 27, 42
@@ -94,6 +120,6 @@ if (isNaN(data))  {
 // Instance: ‘An apple a day keeps the doctor away’ -> `*n *pple * d*y keeps the doctor *w*y
 
 let wording: string = "An apple a day keeps the doctor away";
-let _result = wording.toLowerCase();
-console.log(_result.replace(/a/g, "*"))
+let result5 = wording.toLowerCase();
+console.log(result5.replace(/a/g, "*"))
 
