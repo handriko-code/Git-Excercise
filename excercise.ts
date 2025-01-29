@@ -105,14 +105,15 @@ if (num1 < num2 && num1 < num3) {
 
 // Problem 10: Write a code that shows 1 if the input is a string, 2 if the input is a number, and 3 for others data 
 // Instance:  “hello” → 1
-let data = "hello";
-if (isNaN(data))  {
-    console.log(`${data} is 1`);
-}else if (!isNaN(data)){
-   console.log(`${data} is 2`);
+let datainput = true;
+if (typeof datainput === "string")  {
+    console.log(`${datainput} is 1`);
+}else if (typeof datainput === "number"){
+    console.log(`${datainput} is 2`);
 }else {
-    console.log(`${data} is 3`);
+    console.log(`${datainput} is 3`);
 }
+
 
 
 // Problem 11: Write a code to change every letter a into * from a string of input
