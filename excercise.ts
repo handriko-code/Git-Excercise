@@ -14,8 +14,8 @@ let result1: number = 0;
 const text1: string = "madam";
 const splText= text1.split("");
 const reverseText = splText.reverse();
-const mergetext = reverseText.join();
-let result2 = text1 === mergetext? "palindrome" : "not palindrome";
+const mergeText = reverseText.join("");
+let result2 = text1 === mergeText? "palindrome" : "not palindrome";
 console.log(`${text1} word is ${result2}`); 
 
 
@@ -105,7 +105,7 @@ if (num1 < num2 && num1 < num3) {
 
 // Problem 10: Write a code that shows 1 if the input is a string, 2 if the input is a number, and 3 for others data 
 // Instance:  “hello” → 1
-let datainput = true;
+let datainput = null;
 if (typeof datainput === "string")  {
     console.log(`${datainput} is 1`);
 }else if (typeof datainput === "number"){
