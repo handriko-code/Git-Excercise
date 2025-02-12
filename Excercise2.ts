@@ -1,3 +1,4 @@
+// Excercise 1
 // Create a function to check if two objects are equal 
 // Instances: Input : { a: 2 } & { a: 1 } & Output: false
 
@@ -7,7 +8,7 @@ function myInput1(a:number, b:number) {
 let result = myInput1(1,1);
 console.log(result);
 
-
+// Excercise 2
 // Create a function to get the intersection of two objects
 // Instances: Input : { a: 1, b: 2 } & { a: 1, c: 3 } - Output: { a: 1 }
 let firstObj = {
@@ -26,7 +27,7 @@ let myIntersection = (firstObj: number, secondObj: number) => {
 }
 console.log(myIntersection(firstObj,secondObj));
 
-
+// Excercise 3
 // Create a function to merge two array of student data and remove duplicate data
 //  Student data : name & email
 
@@ -58,7 +59,7 @@ const listStudentarr2: Istudent[] = [
 ]
 console.log(listStudentarr2);
 
-
+// Excercise 4
 // remove duplicte array of object
 
 function mergeStudent(a: Istudent[],b: Istudent[] ){
@@ -68,7 +69,7 @@ function mergeStudent(a: Istudent[],b: Istudent[] ){
 }
 console.log(mergeStudent(listStudentArr1,listStudentarr2));
 
-
+// Excercise 5
 // Create a function that can accept input as an array of objects and switch all values into property and 
 // property into value
 // Example : Input : [{ name: ‘David’, age: 20 }] and Output : [{ David: ‘name’, 20: ‘age’}]
@@ -90,7 +91,7 @@ const swapped = swapKeyValue(arrysValue);
 console.log(swapped);
 
 
-
+// Excercise 6
 // Create a function to find a factorial number using recursion
 // Example: Input : 5 and Output: 5! = 5 x 4 x 3 x 2 x 1 = 12
 // n!= 5*(n-1)*(n-2)*(n-3).......n
@@ -103,7 +104,7 @@ function factorial(n:number): any {
 }
 console.log(factorial(5));
 
-
+// Excercise 7
 // Shooting Game
 // Specifications :
 // Create a shooting game between two player
