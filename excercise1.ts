@@ -4,10 +4,18 @@ let limit: number = 10;
 const input: number = 9;
 let result1: number = 0;
  for (let i = 0; i <= limit; i++) {
-    result1 = input * i;
-    console.log(result1);
+    //result1 = input * i;
+    console.log(`${input} x ${i}`);
  }
 
+
+ // function
+ //function multiple (limit2: number){
+  //  for (let i = 0, i <= 10; i++) {
+  //      console.log(`${limit2} x ${i}`);
+  //  }
+// }
+//multiple(10);
 
 // Problem 2: Write a code to check whether a string is a palindrome or not.
 // Instance: : ‘madam’ → palindrome
@@ -49,13 +57,24 @@ for (let i = 0; i < word.length; i++) {
 
 // Problem 6: Write a code to capitalize the first letter of each word in a string
 // Instance: "hello world" changed into "Hello World"
-let myword: string = "apa kabar";
-let _split = myword.split(" ");
-for (let i = 0; i <_split.length; i++) {
-   _split[i] = _split[i] [0].toUpperCase() + _split[i].substring(1);
+let myword: string = "hello world";
+let split = myword.split(" ");
+for (let i = 0; i <split.length; i++) {
+   split[i] = split[i] [0].toUpperCase() + split[i].substring(1);
     
 }
-console.log(_split.join(" "))
+console.log(split.join(" "))
+
+
+// Function
+function capitalseFirstChar (myword: string) {
+    let split = myword.split(" ");
+    for (let i = 0; i <split.length; i++) {
+        split[i] = split[i] [0].toUpperCase() + split[i].substring(1);
+    }
+    return split.join(" ");
+}      
+console.log(capitalseFirstChar("hello world"));
 
 // Problem 7: Write a code to swap the case of each character from strin
 // Instance: ‘The QuiCk BrOwN Fox’ changed into ‘ tHE qUIcK bRoWn fOX
@@ -71,6 +90,21 @@ for (let i = 0; i < swap.length; i++) {
     }
 }
 console.log(letter);
+
+
+// Function
+function swapStr(swap: string) {
+    let letter: string = " ";
+
+    for (let i = 0; i < swap.length; i++) {
+        if (swap[i] === swap[i].toUpperCase()) {
+         letter += swap[i].toLowerCase();
+         } else {
+        letter += swap[i].toUpperCase();
+    }
+} return letter;
+}
+console.log(swapStr("The QuiCk BrOwN Fox");
 
 // Proble 8: Write a code to find the largest of two given integers
 // Instance: num1 = 42, num2 = 27 the largest is 42
@@ -114,7 +148,18 @@ if (typeof datainput === "string")  {
     console.log(`${datainput} is 3`);
 }
 
+// function
+function masukan(datainput: any) {
+    if (typeof datainput === "string") {
+        return `${datainput} is 1`;
+    }else if (typeof datainput === "number") {
+        return `${datainput} is 2`;
+    }else {
+         return `${datainput} is 3`;
+    }
 
+}
+console.log(masukan(null));
 
 // Problem 11: Write a code to change every letter a into * from a string of input
 // Instance: ‘An apple a day keeps the doctor away’ -> `*n *pple * d*y keeps the doctor *w*y
