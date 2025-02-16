@@ -148,16 +148,17 @@ getRandomItem (){
  }
 
 }
-const startGame = (player1: string, player2: string) => {
+
+function startGame (player1: string, player2: string) {
     console.log("Start Game");
         while(player1.health > 0 && player2.health > 0){
-            console.log("=== Giliran Player 1 ===");
+            console.log("=== Giliran Player 1 lawan Player 2 ===");
             player1.getRandomItem();
             player1.shootingGame(player2);
             if (player2.health <= 0)
             break;
 
-            console.log("\n== Giliran Player 2 ===");
+            console.log("\=== Giliran Player 2 lawan player 1 ===");
             player2.getRandomItem();
             player2.shooingGame(player1);
         }
@@ -170,6 +171,8 @@ const startGame = (player1: string, player2: string) => {
                 console.log(`${player1.name} sebagai pemenang`);
             }
         }
+ 
+
 const player1 = new player("player 1");
 const player2 = new player("player 2")
 
